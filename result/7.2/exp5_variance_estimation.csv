@@ -1,0 +1,2 @@
+experiment,theta_deg,sigma,max_iter,beta2,s_hat_H,s_hat_FC,true_g2_sq,true_gt2_sq,ratio
+variance_estimation,10.0,1.0,2000,0.999,1.0402590036392212,12.184685707092285,1.0100000002980232,12.063820614392682,11.713126889039774

@@ -1,0 +1,11 @@
+experiment,case,theta_deg,kappa,init_mode,direction_solver,eta,tol,max_iter,method,speedup_fc_over_h,converged,iterations,true_grad_norm,grad_ok,index_ok
+exact_eig_regime_map,equal_axis_aligned,0.0,100,mixed_default,eig,0.01,1e-05,10000,ADAM-FC,1.0,True,310,9.777565150794769e-06,True,True
+exact_eig_regime_map,equal_axis_aligned,0.0,100,mixed_default,eig,0.01,1e-05,10000,ADAM-H,1.0,True,310,9.777565150794769e-06,True,True
+exact_eig_regime_map,h_favorable_stable,15.0,10,stable_large,eig,0.01,1e-05,10000,ADAM-FC,2.2454976303317538,True,2369,9.95809840657207e-06,True,True
+exact_eig_regime_map,h_favorable_stable,15.0,10,stable_large,eig,0.01,1e-05,10000,ADAM-H,2.2454976303317538,True,1055,9.962662785250018e-06,True,True
+exact_eig_regime_map,h_favorable_mixed,5.0,50,mixed_default,eig,0.01,1e-05,10000,ADAM-FC,1.949868073878628,True,739,9.795175252925634e-06,True,True
+exact_eig_regime_map,h_favorable_mixed,5.0,50,mixed_default,eig,0.01,1e-05,10000,ADAM-H,1.949868073878628,True,379,9.71069486205911e-06,True,True
+exact_eig_regime_map,fc_favorable_tail,15.0,500,flat_tail,eig,0.01,1e-05,10000,ADAM-FC,0.352680767338908,True,717,9.952410302921185e-06,True,True
+exact_eig_regime_map,fc_favorable_tail,15.0,500,flat_tail,eig,0.01,1e-05,10000,ADAM-H,0.352680767338908,True,2033,9.995139356498223e-06,True,True
+exact_eig_regime_map,fc_favorable_opposite,5.0,10,opposite,eig,0.01,1e-05,10000,ADAM-FC,0.4691689008042895,True,350,9.492886562829372e-06,True,True
+exact_eig_regime_map,fc_favorable_opposite,5.0,10,opposite,eig,0.01,1e-05,10000,ADAM-H,0.4691689008042895,True,746,9.74844078947331e-06,True,True
