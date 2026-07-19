@@ -1,0 +1,4 @@
+# Verified with Python 3.13.5
+numpy==2.4.1
+torch==2.12.1
+matplotlib==3.10.8
