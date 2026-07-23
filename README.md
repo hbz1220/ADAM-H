@@ -36,7 +36,7 @@ The numbered scripts correspond directly to Sections 7.1--7.7. Shared optimizer 
 
 ## Requirements
 
-- Python 3.10 or later
+- Python 3.11 or later
 - NumPy
 - PyTorch
 - Matplotlib (Section 7.2 only)
@@ -100,7 +100,7 @@ Without `--fresh`, Section 7.5 may reuse compatible rows already present in the 
 ## Reproducibility notes
 
 - Random seeds, sampling order, stopping rules, certification criteria, and CSV schemas are fixed in the scripts.
-- In derivative-free experiments, true gradients and Hessians are used only for stopping and final-index certification; they are not used in the optimizer updates.
+- In derivative-free experiments, true gradients and Hessians are used only for stopping, final-index certification, and the disclosed pilot rankings; they are not used in the optimizer updates.
 - The committed files under `result/` are the verified raw outputs used for the manuscript tables and quantitative statements.
 - Section 7.5 tests DF-HiSD step sizes in `{0.001, 0.005, 0.01, 0.02, 0.05, 0.1}` on five pilot starts disjoint from the reported starts. Candidates share initial states and estimator streams and are selected lexicographically by decreasing certified-success count, then increasing successful-run median, summed final true-gradient norm, and step size.
 - Some full experiments, particularly Sections 7.3, 7.5, and 7.7, require many optimizer runs and may take substantial time.
@@ -108,8 +108,8 @@ Without `--fresh`, Section 7.5 may reuse compatible rows already present in the 
 
 ## Results
 
-The `result/` directory contains the formal CSV outputs, pilot-sweep records used for step-size selection, auxiliary controls discussed in the manuscript, and the Section 7.2 diagnostic figure. A SHA-256 manifest will be provided at the repository root for integrity checking.
+The `result/` directory contains the formal CSV outputs, pilot-sweep records used for step-size selection, auxiliary controls discussed in the manuscript, and the Section 7.2 diagnostic figure.
 
-## Citation and license
+## License
 
-Citation metadata and licensing information are provided in `CITATION.cff` and `LICENSE`, respectively.
+This repository is released under the MIT License; see `LICENSE`.
